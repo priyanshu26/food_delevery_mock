@@ -1,0 +1,233 @@
+/* font-family: 'Baloo Bhaina 2', cursive;
+font-family: 'Patua One', cursive;
+font-family: 'Noticia Text', serif;
+font-family: 'Mitr', sans-serif;
+font-family: 'Bree Serif', serif; */
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    color: darkslategray;
+    user-select: none;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root {
+    --navbar-height: 55px;
+}
+/* Navigation bar */
+#navbar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+#navbar::before {
+    content: "";
+    /* background: url('../img/nav.jpg')no-repeat center center/cover; */
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+    box-shadow: 0 5px 10px #000;
+}
+
+/* Navigation bar photo and logo */
+#logo {
+    margin: 3px 10px;
+}
+#logo img{
+    height: 60px;
+    margin: 6px 22px 0px 22px;
+}
+
+/* Navigation bar list Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+}
+#navbar ul li a {
+    /* color: black; */
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#navbar ul li a:hover {
+    color: darkslategray;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 20px;
+    height: 99vh;
+}
+
+#home::before {
+    content: "";
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/bg2.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    word-spacing: 5px;
+    padding: 16px;
+    font-family: 'Noticia Text', serif;
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Noticia Text', serif;
+}
+
+/* services Section */
+#services-container{
+    background-color: cornsilk;
+}
+#services {
+    margin: 20px;
+    display: flex;
+}
+#services .box{
+    padding: 25px;
+    margin: 3px 6px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(240, 239, 239);
+    margin-bottom: 25px;
+}
+#services .box img {
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+#services .box p {
+    font-family: 'Noticia Text', serif;
+}
+
+/* Section Clients */
+#client-section {
+    position: relative;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bg.jpg)no-repeat center center/cover;
+    width: 100vw;
+    height: 100%;
+    z-index: -3;
+    opacity: 0.3;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item {
+    padding: 35px;
+}
+#clients img{
+    height: 120px;
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    z-index: -4;
+    opacity: 0.6;
+}
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 95%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Noticia Text', serif;
+}
+
+/* footer section */
+footer {
+    background: black;
+    padding: 10px 20px;
+}
+footer #copyright{
+    font-size: 1.2rem;
+    color: white;
+}
+/* Utility Classes */
+.h-primary {
+    font-size: 3.5rem;
+    padding: 10px;
+    font-family: 'Noticia Text', serif;
+}
+.h-secondary {
+    font-size: 2.1rem;
+    padding: 20px;
+    font-family: 'Noticia Text', serif;
+}
+
+.btn {
+    background-color: saddlebrown;
+    color: white;
+    padding: 13px 34px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+}
